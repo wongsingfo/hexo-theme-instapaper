@@ -1,6 +1,6 @@
 comment:
   gitalk:
-    enable: true
+    enable: false
     owner:
     admin:
     repo:
@@ -9,12 +9,8 @@ comment:
     labels: 'gitalk'
     distractionFreeMode: true
 socialList:
-  - name: telegram
-    url:
   - name: github
-    url:
-  - name: mail
-    url:
+    url: https://github.com/wongsingfo
 highlight:
   light: https://cdn.staticfile.org/highlight.js/11.5.0/styles/default.min.css
   dark: https://cdn.staticfile.org/highlight.js/11.5.0/styles/tokyo-night-dark.min.css

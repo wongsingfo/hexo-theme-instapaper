@@ -26,6 +26,12 @@ git clone git@github.com:techmovie/hexo-theme-instapaper.git themes/instapaper -
 
 在 Hexo 目录的`_config.yml`中将`theme`的值改为`instapaper`
 
+本主题依赖 [pug 模板引擎](https://pugjs.org)，需要在博客根目录下安装该引擎：
+
+```
+npm install hexo-renderer-pug --save
+```
+
 ## 主题配置
 
 将本主题目录下的的`_config.yaml`按以下提示进行配置
