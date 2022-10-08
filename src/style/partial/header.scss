@@ -12,6 +12,9 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
+    // add margin for the dark-mode button
+    margin-right: 25px;
   }
   .nav-item {
     margin: 17px;

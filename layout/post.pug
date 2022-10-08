@@ -4,8 +4,9 @@ section.post-page
     .post-info
       span #{ time(page.date, 'YYYY-MM-DD HH:mm:ss') }
       span.tags
-        each tag in page.tags.data
-          a(href=url_for(tag.path)) ##{ tag.name }
+        if page.tags
+          each tag in page.tags.data
+            a(href=url_for(tag.path)) ##{ tag.name }
   if page.featured_image
     .feature-img
       img(src=page.featured_image, alt='feature-img')
@@ -25,8 +26,8 @@ section.post-page
   .post-pager
     .prev
       if page.prev
-        a(href=url_for(page.prev.path), title=page.prev.title) 上一篇 #{ page.prev.title }
+        a(href=url_for(page.prev.path), title=page.prev.title) Previous: #{ page.prev.title }
     .next 
       if page.next
-        a(href=url_for(page.next.path), title=page.next.title) 下一篇 #{ page.next.title }
+        a(href=url_for(page.next.path), title=page.next.title) Next: #{ page.next.title }
   include ./partial/comment.pug

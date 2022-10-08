@@ -104,6 +104,7 @@
   }
   a {
     color: var(--post-link-color);
+    text-decoration: underline;
     &:hover,
     &:active {
       color: var(--link-active-color);
