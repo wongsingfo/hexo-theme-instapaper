@@ -111,6 +111,9 @@
       color: var(--link-active-color);
     }
   }
+  sup {
+    vertical-align: super;
+  }
   .copyright-wrapper {
     border-top: 1px dashed #ececec;
     border-color: var(--border-color);
@@ -215,6 +218,7 @@
     color: var(--code-color);
     padding: 3px;
     line-height: 35px;
+    font-size: 16px;
   }
   ::-webkit-scrollbar {
     display: none;
