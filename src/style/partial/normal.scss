@@ -2,6 +2,11 @@
 * {
   font-family: 'Noto Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', serif;
 }
+
+.code * {
+  font-family: monospace;
+}
+
 body {
   --text-color: #{$textColor};
   --text-title-color: #{$textTitleColor};
@@ -194,4 +199,8 @@ a {
 p, ul, ol {
   margin: 27px 0;
   line-height: 30px;
+}
+
+ul ul {
+  margin: 0 0;
 }
