@@ -112,7 +112,12 @@
     }
   }
   sup {
-    vertical-align: super;
+    font-size: 75%;
+    position: relative;
+    top: -0.5em;
+    a {
+      text-decoration: none;
+    }
   }
   .copyright-wrapper {
     border-top: 1px dashed #ececec;
