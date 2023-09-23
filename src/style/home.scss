@@ -8,19 +8,19 @@
     border-bottom: 1px solid #ececec;
     border-color: var(--border-color);
     position: relative;
-    &.has-img {
-      padding-right: 170px;
-    }
+    display: flex;
+    gap: 20px;
+  }
+  .article-container {
+    flex: 1;
   }
   .article-title {
     display: block;
     font-weight: 400;
     font-size: $titleSize;
-    width: calc(100% - 65px);
+    width: 100%;
     line-height: 30px;
-    text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;
     margin-bottom: 12px;
   }
   .article-preview {
@@ -28,7 +28,6 @@
     transition: all 200ms ease;
     font-size: 16px;
     line-height: 24px;
-    max-width: 580px;
   }
   .article-time {
     color: var(--text-second-color);
@@ -38,11 +37,9 @@
     align-items: center;
   }
   .img-wrapper {
-    position: absolute;
-    top: 25px;
-    right: 0;
-    width: 150px;
-    height: 80px;
+    flex: 0 0 192px;
+    align-self: center;
+    height: 128px;
     background-size: cover, auto;
     background-position: 50%;
     opacity: 0.75;

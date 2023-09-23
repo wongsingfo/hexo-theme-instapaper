@@ -82,12 +82,8 @@
     font-size: 12px;
   }
   .article-list {
-    .article-list-item.has-img {
-      padding-right: 100px;
-    }
-
     .img-wrapper {
-      width: 80px;
+      display: none;
     }
     .article-title {
       white-space: pre-wrap;
